@@ -18,8 +18,6 @@ class Makdolan {
     fun calculateUniqueCode(): String {
         val chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
-
-
         val randomAnyLetter = chars.elementAt(Math.floor(Random.nextDouble() * chars.length).toInt()) // Returns random character from chars
         val randomNumber = Math.floor(Random.nextDouble() * 100).toInt() // Returns random number from 1 to 100
         val randomSmallLetter = chars.substring(26).elementAt(Math.floor(Random.nextDouble() * chars.substring(26).length).toInt()) // Returns random small character
