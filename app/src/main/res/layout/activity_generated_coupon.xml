@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                                    xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                   xmlns:tools="http://schemas.android.com/tools"
-                                                   android:id="@+id/layout"
                                                    android:layout_height="match_parent"
-                                                   android:layout_width="match_parent">
+                                                   android:layout_width="match_parent" android:id="@+id/zoomableView">
     <TextView
             android:text="@string/release_date"
             android:layout_width="wrap_content"
@@ -87,7 +85,8 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:id="@+id/send_coupon_CRDV"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/print_or_save_CRDV"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/print_or_save_CRDV"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp" android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp" app:cardBackgroundColor="#FFC300" app:cardCornerRadius="5dp">
@@ -103,7 +102,8 @@
             <TextView
                     android:text="@string/delivery_within_twentyfour_hours"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/delivery_under_twentyfour_hours_TV" android:textSize="22sp"
+                    android:layout_height="wrap_content" android:id="@+id/delivery_under_twentyfour_hours_TV"
+                    android:textSize="22sp"
                     android:textColor="@android:color/white"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
