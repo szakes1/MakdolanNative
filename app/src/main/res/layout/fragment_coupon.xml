@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent"
+              android:layout_width="match_parent" android:orientation="vertical" android:gravity="center">
+    <TextView
+            android:text="@string/click_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/click_coupon_TV" android:textSize="30sp"
+            android:textStyle="bold" android:textColor="@android:color/white"/>
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:contentDescription="@string/image_content_description" android:id="@+id/coupon_IMGV"/>
+</LinearLayout>
