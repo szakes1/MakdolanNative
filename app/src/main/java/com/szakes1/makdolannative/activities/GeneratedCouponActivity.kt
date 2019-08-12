@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.core.content.ContextCompat
-import com.ablanco.zoomy.Zoomy
 import com.szakes1.makdolannative.R
 import com.szakes1.makdolannative.helpers.Makdolan
 import kotlinx.android.synthetic.main.activity_generated_coupon.*
