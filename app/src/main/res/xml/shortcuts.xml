@@ -3,7 +3,8 @@
     <shortcut
             android:shortcutId="hamburger_shortcut"
             android:enabled="true"
-            android:shortcutShortLabel="@string/hamburger_shortcut">
+            android:shortcutShortLabel="@string/hamburger_shortcut"
+            android:icon="@drawable/ic_hamburger">
         <intent
                 android:action="android.intent.action.VIEW"
                 android:targetPackage="com.szakes1.makdolannative"
@@ -14,7 +15,8 @@
     <shortcut
             android:shortcutId="cheeseburger_shortcut"
             android:enabled="true"
-            android:shortcutShortLabel="@string/cheeseburger_shortcut">
+            android:shortcutShortLabel="@string/cheeseburger_shortcut"
+            android:icon="@drawable/ic_cheeseburger">
         <intent
                 android:action="android.intent.action.VIEW"
                 android:targetPackage="com.szakes1.makdolannative"
@@ -25,7 +27,8 @@
     <shortcut
             android:shortcutId="icecream_shortcut"
             android:enabled="true"
-            android:shortcutShortLabel="@string/icecream_shortcut">
+            android:shortcutShortLabel="@string/icecream_shortcut"
+            android:icon="@drawable/ic_ice_cream">
         <intent
                 android:action="android.intent.action.VIEW"
                 android:targetPackage="com.szakes1.makdolannative"
@@ -36,7 +39,8 @@
     <shortcut
             android:shortcutId="fries_shortcut"
             android:enabled="true"
-            android:shortcutShortLabel="@string/fries_shortcut">
+            android:shortcutShortLabel="@string/fries_shortcut"
+            android:icon="@drawable/ic_french_fries">
         <intent
                 android:action="android.intent.action.VIEW"
                 android:targetPackage="com.szakes1.makdolannative"
