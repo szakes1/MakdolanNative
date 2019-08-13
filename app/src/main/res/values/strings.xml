@@ -3,7 +3,7 @@
 
     <string name="how_to_use">Jak używać?</string>
     <string name="instructions">1. Przesuń palcem na kupon, który chcesz wygenerować.\n2. Kliknij w kupon, który
-        wybrałeś.\n3. Pokaż kupon kasjerowi.\n4. Wróć za pomocą gestu bądź przycisku powrotu na pasku nawigacyjnym.
+        wybrałeś.\n3. Pokaż kupon kasjerowi.\n4. Wysuń pasek nawigacyjny z dołu do góry i wróć do aplikacji.
     </string>
     <string name="importantant_information">Ważna informacja:</string>
     <string name="important_information_content">Nie zaleca się korzystanie z tej aplikacji w jakiejkolwiek restauracji.
@@ -23,4 +23,8 @@
     <string name="print_or_save_to_pdf">DRUKUJ /\nZAPISZ JAKO PDF</string>
     <string name="send_coupon">PRZEŚLIJ KUPON</string>
     <string name="delivery_within_twentyfour_hours">(WYSYŁKA W CIĄGU 24 GODZIN)</string>
+    <string name="hamburger_shortcut">Hamburger</string>
+    <string name="cheeseburger_shortcut">Cheeseburger</string>
+    <string name="icecream_shortcut">Lody</string>
+    <string name="fries_shortcut">Frytki</string>
 </resources>
