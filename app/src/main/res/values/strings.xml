@@ -27,4 +27,7 @@
     <string name="cheeseburger_shortcut">Cheeseburger</string>
     <string name="icecream_shortcut">Lody</string>
     <string name="fries_shortcut">Frytki</string>
+    <string name="update_title">Dostępna Nowa wersja dostępna do pobrania</string>
+    <string name="update_button">Zaktualizuj</string>
+    <string name="cancel_button">Anuluj</string>
 </resources>
