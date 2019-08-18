@@ -1,5 +1,6 @@
 package com.szakes1.makdolannative.activities
 
+import android.content.pm.PackageManager
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,12 +10,14 @@ import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 import com.szakes1.makdolannative.R
 import com.szakes1.makdolannative.adapters.ViewPagerAdapter
+import com.szakes1.makdolannative.helpers.AutoUpdater
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var tabLayout: TabLayout
     private lateinit var viewPager: ViewPager
     private lateinit var pagerAdapter: PagerAdapter
+    private lateinit var autoUpdater: AutoUpdater
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,5 +37,12 @@ class MainActivity : AppCompatActivity() {
 
         viewPager.adapter = pagerAdapter
         tabLayout.setupWithViewPager(viewPager, true)
+
+        autoUpdater = AutoUpdater()
+        autoUpdater.act = this
+        autoUpdater.checkForPermission()
+    }
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+        if (requestCode==1) if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) autoUpdater.showDialog()
     }
 }
