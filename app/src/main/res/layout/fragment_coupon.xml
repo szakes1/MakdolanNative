@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent"
               android:layout_width="match_parent" android:orientation="vertical" android:gravity="center">
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:contentDescription="@string/image_content_description" android:id="@+id/coupon_IMGV"/>
     <TextView
             android:text="@string/click_coupon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/click_coupon_TV" android:textSize="30sp"
             android:textStyle="bold" android:textColor="@android:color/white"/>
-
-    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
-               android:contentDescription="@string/image_content_description" android:id="@+id/coupon_IMGV"/>
+    <Button
+            android:text="@string/classic_coupom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/classic_coupon_BTN" android:layout_margin="5dp"
+            android:background="#EB9E3E" android:textColor="@android:color/white" android:textSize="18sp"/>
+    <Button
+            android:text="@string/email_coupom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/email_coupon_BTN" android:layout_margin="5dp"
+            android:background="#CE3C3E" android:textColor="@android:color/white" android:textSize="18sp"/>
 </LinearLayout>
