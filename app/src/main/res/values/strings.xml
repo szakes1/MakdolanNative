@@ -7,19 +7,32 @@
     </string>
     <string name="importantant_information">Ważna informacja:</string>
     <string name="important_information_content">Nie zaleca się korzystanie z tej aplikacji w jakiejkolwiek restauracji.
-                                                 Aplikacja jest tylko do celów edukacyjnych i pokazowych.</string>
+        Aplikacja jest tylko do celów edukacyjnych i pokazowych.
+    </string>
 
-    <string name="click_coupon">Kliknij w kupon:</string>
+    <string name="click_coupon">Wybierz kupon:</string>
     <string name="image_content_description">Kupon</string>
+    <string name="classic_coupom">Klasyczny kupon</string>
+    <string name="email_coupom">Kupon z maila</string>
 
     <string name="release_date">DATA WYDANIA:</string>
     <string name="unique_code">UNIKALNY KOD:</string>
 
-    <string name="generated_code_rules">Kupon ten upoważnia do jednokrotnego odbioru produktu gratis przy kolejnym dowolnym zakupie z oferty klasycznej.
-                                        Kupon ważny jest przez 7 dni od czasu jego wygenerowania i może być zrealizowany w dowolnej restauracji
-                                        McDonald\'s w Polsce z wyłączeniem restauracji znajdujących się na terenie Portu Lotniczego im. Fryderyka
-                                        Chopina w Warszawie oraz Portu Lotniczego im. Lecha Wałęsy w Gdańsku. Szczegółowy regulamin ankiety „Opinia Gości\"
-                                        znajduje się na stronie <font color="#FFC300"><u>www.mcdonalds.pl</u></font> w sekcji <font color="#FFC300"><u>Regulaminy</u></font></string>
+    <string name="generated_code_rules">Kupon ten upoważnia do jednokrotnego odbioru produktu gratis przy kolejnym
+        dowolnym zakupie z oferty klasycznej.
+        Kupon ważny jest przez 7 dni od czasu jego wygenerowania i może być zrealizowany w dowolnej restauracji
+        McDonald\'s w Polsce z wyłączeniem restauracji znajdujących się na terenie Portu Lotniczego im. Fryderyka
+        Chopina w Warszawie oraz Portu Lotniczego im. Lecha Wałęsy w Gdańsku. Szczegółowy regulamin ankiety „Opinia
+        Gości\"
+        znajduje się na stronie
+        <font color="#FFC300">
+            <u>www.mcdonalds.pl</u>
+        </font>
+        w sekcji
+        <font color="#FFC300">
+            <u>Regulaminy</u>
+        </font>
+    </string>
     <string name="print_or_save_to_pdf">DRUKUJ /\nZAPISZ JAKO PDF</string>
     <string name="send_coupon">PRZEŚLIJ KUPON</string>
     <string name="delivery_within_twentyfour_hours">(WYSYŁKA W CIĄGU 24 GODZIN)</string>
