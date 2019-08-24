@@ -10,6 +10,7 @@ import androidx.core.content.ContextCompat
 
 import com.szakes1.makdolannative.R
 import com.szakes1.makdolannative.activities.GeneratedCouponActivity
+import com.szakes1.makdolannative.activities.GeneratedCouponEmailActivity
 import com.szakes1.makdolannative.activities.MainActivity
 import kotlinx.android.synthetic.main.fragment_coupon.view.*
 
@@ -22,11 +23,20 @@ class CouponFragment(private val coupon_image: Int) : Fragment() {
         // Inflate the layout for this fragment
         val viewOfLayout = inflater.inflate(R.layout.fragment_coupon, container, false)
         val couponImage = viewOfLayout.coupon_IMGV
+        val classicCoupon = viewOfLayout.classic_coupon_BTN
+        val emailCoupon = viewOfLayout.email_coupon_BTN
 
         couponImage.setImageDrawable(ContextCompat.getDrawable(activity!!.applicationContext, coupon_image))
 
-        couponImage.setOnClickListener {
+        classicCoupon.setOnClickListener {
             val intent = Intent(activity!!.applicationContext, GeneratedCouponActivity::class.java)
+            intent.putExtra("coupon_image", coupon_image)
+
+            startActivity(intent)
+        }
+
+        emailCoupon.setOnClickListener {
+            val intent = Intent(activity!!.applicationContext, GeneratedCouponEmailActivity::class.java)
             intent.putExtra("coupon_image", coupon_image)
 
             startActivity(intent)
