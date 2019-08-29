@@ -9,7 +9,7 @@
                 android:action="android.intent.action.VIEW"
                 android:targetPackage="com.szakes1.makdolannative"
                 android:targetClass="com.szakes1.makdolannative.activities.GeneratedCouponActivity" >
-            <extra android:name="coupon_image" android:value="2131165279" />
+            <extra android:name="coupon_image" android:value="2131165280" />
         </intent>
     </shortcut>
     <shortcut
@@ -21,7 +21,7 @@
                 android:action="android.intent.action.VIEW"
                 android:targetPackage="com.szakes1.makdolannative"
                 android:targetClass="com.szakes1.makdolannative.activities.GeneratedCouponActivity" >
-            <extra android:name="coupon_image" android:value="2131165277" />
+            <extra android:name="coupon_image" android:value="2131165278" />
         </intent>
     </shortcut>
     <shortcut
@@ -33,7 +33,7 @@
                 android:action="android.intent.action.VIEW"
                 android:targetPackage="com.szakes1.makdolannative"
                 android:targetClass="com.szakes1.makdolannative.activities.GeneratedCouponActivity" >
-            <extra android:name="coupon_image" android:value="2131165280" />
+            <extra android:name="coupon_image" android:value="2131165281" />
         </intent>
     </shortcut>
     <shortcut
@@ -45,7 +45,7 @@
                 android:action="android.intent.action.VIEW"
                 android:targetPackage="com.szakes1.makdolannative"
                 android:targetClass="com.szakes1.makdolannative.activities.GeneratedCouponActivity" >
-            <extra android:name="coupon_image" android:value="2131165278" />
+            <extra android:name="coupon_image" android:value="2131165279" />
         </intent>
     </shortcut>
 </shortcuts>

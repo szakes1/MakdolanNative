@@ -6,7 +6,7 @@
                                                    android:layout_height="match_parent"
                                                    tools:context=".fragments.HomeFragment">
     <ImageView
-            android:src="@drawable/ic_burger"
+            app:srcCompat="@drawable/ic_burger"
             android:layout_width="110dp"
             android:layout_height="80dp"
             android:id="@+id/app_icon_IMGV" app:layout_constraintStart_toStartOf="parent"
