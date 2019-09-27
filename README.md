@@ -2,6 +2,8 @@
 
 ---
 
+Aplikacja już nie wspierana. Pobierz najnowszą wersję tutaj: https://github.com/szakes1/makdolan_flutter
+
 Aplikacja do generowania kuponów do restauracji. 
 
 Jest to natywna wersja Makdolan (poprzednio: "Makdolan Mobile") napisana w Kotlinie dla systemu Android. Każda pomoc mile widziana! 
