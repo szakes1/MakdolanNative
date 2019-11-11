@@ -9,6 +9,7 @@
     <string name="important_information_content">Nie zaleca się korzystanie z tej aplikacji w jakiejkolwiek restauracji.
         Aplikacja jest tylko do celów edukacyjnych i pokazowych.
     </string>
+    <string name="credits">Icon made by Smashicons from www.flaticon.com</string>
 
     <string name="click_coupon">Wybierz kupon:</string>
     <string name="image_content_description">Kupon</string>
