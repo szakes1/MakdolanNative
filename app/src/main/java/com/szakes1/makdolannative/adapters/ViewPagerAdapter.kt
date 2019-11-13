@@ -6,9 +6,10 @@ import androidx.fragment.app.FragmentStatePagerAdapter
 import com.szakes1.makdolannative.R
 import com.szakes1.makdolannative.fragments.CouponFragment
 import com.szakes1.makdolannative.fragments.HomeFragment
+import java.lang.IllegalStateException
 
 class ViewPagerAdapter(fm: FragmentManager, private val numberOfFrags: Int) : FragmentStatePagerAdapter(fm) {
-    override fun getItem(position: Int): Fragment? {
+    override fun getItem(position: Int): Fragment {
         when (position) {
             0 -> return HomeFragment()
             1 -> return CouponFragment(R.drawable.coupon_hamburger)
@@ -16,7 +17,7 @@ class ViewPagerAdapter(fm: FragmentManager, private val numberOfFrags: Int) : Fr
             3 -> return CouponFragment(R.drawable.coupon_cheeseburger)
             4 -> return CouponFragment(R.drawable.coupon_fries)
         }
-        return null
+        throw IllegalStateException("Position $position is invalid for this viewpager")
     }
 
     override fun getCount(): Int {
