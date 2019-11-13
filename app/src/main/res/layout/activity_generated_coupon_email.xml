@@ -1,256 +1,413 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".activities.GeneratedCouponEmailActivity">
 
     <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_arrow_back_black"
             android:id="@+id/go_back_ic"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
-            app:layout_constraintTop_toTopOf="@+id/guideline6"/>
-    <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_more_vert"
-            android:id="@+id/more_vert_ic" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/go_back_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline6"
+            app:srcCompat="@drawable/ic_arrow_back_black" />
+
+    <ImageView
+            android:id="@+id/more_vert_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            app:layout_constraintTop_toTopOf="@+id/guideline6"/>
-    <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_email"
-            android:id="@+id/email_ic" app:layout_constraintEnd_toStartOf="@+id/more_vert_ic"
-            android:layout_marginEnd="8dp"
-            app:layout_constraintTop_toTopOf="@+id/more_vert_ic"/>
-    <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_delete"
-            android:id="@+id/delete_ic"
-            app:layout_constraintEnd_toStartOf="@+id/email_ic" android:layout_marginEnd="8dp"
-            app:layout_constraintTop_toTopOf="@+id/email_ic"/>
-    <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_archive"
-            android:id="@+id/archive_ic"
-            app:layout_constraintEnd_toStartOf="@+id/delete_ic" android:layout_marginEnd="8dp"
-            app:layout_constraintTop_toTopOf="@+id/delete_ic"/>
-    <TextView
-            android:text="Voucher"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="@+id/go_back_ic"
-            android:fontFamily="sans-serif" android:textSize="18sp" android:id="@+id/voucher_TV"
-            android:textColor="@android:color/black"
-            app:layout_constraintTop_toTopOf="@+id/guideline7" android:layout_marginTop="8dp"/>
-    <TextView
-            android:text="Odebrane"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/inbox_TV" app:layout_constraintStart_toEndOf="@+id/voucher_TV"
-            android:layout_marginStart="8dp"
-            app:layout_constraintTop_toTopOf="@+id/voucher_TV" android:layout_marginTop="4dp"
-            android:background="#EEEEEE" android:paddingStart="5dp" android:paddingEnd="5dp" android:textSize="12sp"
-            android:textColor="@android:color/black"/>
-    <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_star_border_black"
-            android:id="@+id/star_ic" android:layout_marginEnd="16dp"
+            android:contentDescription="@string/more_vert_icon"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/voucher_TV"/>
+            app:layout_constraintTop_toTopOf="@+id/guideline6"
+            app:srcCompat="@drawable/ic_more_vert" />
+
+    <ImageView
+            android:id="@+id/email_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/email_icon"
+            app:layout_constraintEnd_toStartOf="@+id/more_vert_ic"
+            app:layout_constraintTop_toTopOf="@+id/more_vert_ic"
+            app:srcCompat="@drawable/ic_email" />
+
+    <ImageView
+            android:id="@+id/delete_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/delete_icon"
+            app:layout_constraintEnd_toStartOf="@+id/email_ic"
+            app:layout_constraintTop_toTopOf="@+id/email_ic"
+            app:srcCompat="@drawable/ic_delete" />
+
+    <ImageView
+            android:id="@+id/archive_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/archive_icon"
+            app:layout_constraintEnd_toStartOf="@+id/delete_ic"
+            app:layout_constraintTop_toTopOf="@+id/delete_ic"
+            app:srcCompat="@drawable/ic_archive" />
+
     <TextView
-            android:text="M"
+            android:id="@+id/voucher_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/voucher"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/go_back_ic"
+            app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <TextView
+            android:id="@+id/inbox_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="#EEEEEE"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/inbox"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/voucher_TV"
+            app:layout_constraintTop_toTopOf="@+id/voucher_TV" />
+
+    <ImageView
+            android:id="@+id/star_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/star_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/voucher_TV"
+            app:srcCompat="@drawable/ic_star_border_black" />
+
+    <TextView
+            android:id="@+id/profile_picture_TV"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:id="@+id/profile_picture_TV" android:background="@drawable/circle"
-            android:gravity="center" android:textSize="18sp" android:textColor="@android:color/white"
-            android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/voucher_TV"
-            app:layout_constraintStart_toStartOf="@+id/voucher_TV"/>
+            android:layout_marginTop="24dp"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:text="@string/profile_pic"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/voucher_TV"
+            app:layout_constraintTop_toBottomOf="@+id/voucher_TV" />
+
     <TextView
-            android:text="McDonalds Poland"
+            android:id="@+id/sender_TV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/sender_TV" android:textColor="@android:color/black"
-            app:layout_constraintStart_toEndOf="@+id/profile_picture_TV" android:layout_marginStart="8dp"
-            app:layout_constraintTop_toTopOf="@+id/profile_picture_TV"/>
-    <TextView
-            android:text="Wczoraj"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/yesterday_TV" app:layout_constraintStart_toEndOf="@+id/sender_TV"
             android:layout_marginStart="8dp"
-            app:layout_constraintTop_toTopOf="@+id/sender_TV"/>
+            android:text="@string/makdolan_poland"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toEndOf="@+id/profile_picture_TV"
+            app:layout_constraintTop_toTopOf="@+id/profile_picture_TV" />
+
     <TextView
-            android:text="do mnie"
+            android:id="@+id/yesterday_TV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/to_me_TV" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/sender_TV" app:layout_constraintStart_toEndOf="@+id/profile_picture_TV"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:text="@string/yesterday"
+            app:layout_constraintStart_toEndOf="@+id/sender_TV"
+            app:layout_constraintTop_toTopOf="@+id/sender_TV" />
+
+    <TextView
+            android:id="@+id/to_me_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/to_myself"
+            app:layout_constraintStart_toEndOf="@+id/profile_picture_TV"
+            app:layout_constraintTop_toBottomOf="@+id/sender_TV" />
+
     <ImageView
-            android:layout_width="17dp"
-            android:layout_height="19dp" app:srcCompat="@drawable/ic_expand_more_black"
             android:id="@+id/expand_ic"
-            app:layout_constraintStart_toEndOf="@+id/to_me_TV" android:layout_marginStart="2dp"
-            app:layout_constraintTop_toTopOf="@+id/to_me_TV"/>
+            android:layout_width="17dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="2dp"
+            android:contentDescription="@string/expand_icon"
+            app:layout_constraintStart_toEndOf="@+id/to_me_TV"
+            app:layout_constraintTop_toTopOf="@+id/to_me_TV"
+            app:srcCompat="@drawable/ic_expand_more_black" />
+
     <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_reply"
             android:id="@+id/reply_ic"
-            app:layout_constraintEnd_toStartOf="@+id/more_vert_2_ic" android:layout_marginEnd="8dp"
-            app:layout_constraintTop_toTopOf="@+id/more_vert_2_ic"/>
-    <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_more_vert"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/reply_icon"
+            app:layout_constraintEnd_toStartOf="@+id/more_vert_2_ic"
+            app:layout_constraintTop_toTopOf="@+id/more_vert_2_ic"
+            app:srcCompat="@drawable/ic_reply" />
+
+    <ImageView
             android:id="@+id/more_vert_2_ic"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
-            app:layout_constraintTop_toTopOf="@+id/yesterday_TV"/>
-    <TextView
-            android:text="Dzień dobry,"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/begin_message_TV" android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/profile_picture_TV" app:layout_constraintStart_toStartOf="@+id/profile_picture_TV"
-    />
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/more_vert_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/yesterday_TV"
+            app:srcCompat="@drawable/ic_more_vert" />
+
     <TextView
-            android:text="Przesyłamy kupon w podziękowaniu za wzięcie w ankiecie."
+            android:id="@+id/begin_message_TV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/begin_message_2_TV" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/begin_message_TV" app:layout_constraintStart_toStartOf="@+id/begin_message_TV"
-    />
+            android:layout_marginTop="16dp"
+            android:text="@string/begin_message"
+            app:layout_constraintStart_toStartOf="@+id/profile_picture_TV"
+            app:layout_constraintTop_toBottomOf="@+id/profile_picture_TV" />
+
     <TextView
-            android:text="DATA WYDANIA:"
+            android:id="@+id/begin_message_2_TV"
+            android:layout_width="351dp"
+            android:layout_height="36dp"
+            android:text="@string/begin_message2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/begin_message_TV"
+            app:layout_constraintTop_toBottomOf="@+id/begin_message_TV" />
+
+    <TextView
+            android:id="@+id/release_date_TV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/release_date_TV" android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/begin_message_2_TV" app:layout_constraintStart_toStartOf="@+id/begin_message_2_TV"
-            android:textStyle="bold" android:textColor="@android:color/black"/>
+            android:layout_marginTop="16dp"
+            android:text="@string/release_date"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/begin_message_2_TV"
+            app:layout_constraintTop_toBottomOf="@+id/begin_message_2_TV" />
+
     <TextView
-            android:text="24/08/2019"
+            android:id="@+id/release_date_generated_TV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/release_date_generated_TV" app:layout_constraintStart_toEndOf="@+id/release_date_TV"
             android:layout_marginStart="8dp"
-            app:layout_constraintTop_toTopOf="@+id/release_date_TV"/>
+            app:layout_constraintStart_toEndOf="@+id/release_date_TV"
+            app:layout_constraintTop_toTopOf="@+id/release_date_TV" />
+
     <TextView
-            android:text="UNIKALNY KOD:"
+            android:id="@+id/unique_code_TV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/unique_code_TV" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/release_date_TV" app:layout_constraintStart_toStartOf="@+id/release_date_TV"
-            android:textStyle="bold" android:textColor="@android:color/black"/>
+            android:layout_marginTop="8dp"
+            android:text="@string/unique_code"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/release_date_TV"
+            app:layout_constraintTop_toBottomOf="@+id/release_date_TV" />
+
     <TextView
-            android:text="5-Ki-ef-6"
+            android:id="@+id/unique_code_generated_TV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/unique_code_generated_TV" app:layout_constraintStart_toEndOf="@+id/unique_code_TV"
             android:layout_marginStart="8dp"
-            app:layout_constraintTop_toTopOf="@+id/unique_code_TV"/>
+            app:layout_constraintStart_toEndOf="@+id/unique_code_TV"
+            app:layout_constraintTop_toTopOf="@+id/unique_code_TV" />
+
     <ImageView
+            android:id="@+id/generated_coupon_IMGV"
             android:layout_width="0dp"
-            android:layout_height="150dp" app:srcCompat="@drawable/coupon_hamburger"
-            android:id="@+id/generated_coupon_IMGV" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/unique_code_TV" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"/>
-    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                                android:id="@+id/guideline6"
-                                                android:orientation="horizontal"
-                                                app:layout_constraintGuide_percent="0.02"/>
-    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                                android:id="@+id/guideline7"
-                                                android:orientation="horizontal"
-                                                app:layout_constraintGuide_percent="0.07"/>
-    <TextView
-            android:text="@string/generated_code_rules"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/main_content_message__TV" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/generated_coupon_IMGV" app:layout_constraintStart_toStartOf="parent"
-            android:textSize="10sp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
-            android:layout_marginStart="16dp"/>
-    <TextView
-            android:text="Dziękujemy za wzięcie udziału w badaniu!"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/coupon_image"
+            app:layout_constraintBottom_toTopOf="@+id/guideline13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline14"
+            app:srcCompat="@drawable/coupon_hamburger" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.07" />
+
+    <TextView
+            android:id="@+id/main_content_message__TV"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/generated_code_rules"
+            android:textSize="12sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline13" />
+
+    <TextView
             android:id="@+id/end_message_TV"
-            app:layout_constraintTop_toBottomOf="@+id/main_content_message__TV" app:layout_constraintStart_toStartOf="@+id/main_content_message__TV"
-            app:layout_constraintBottom_toTopOf="@+id/guideline8" app:layout_constraintVertical_bias="0.944"
-            android:textSize="12sp"/>
-    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                                android:id="@+id/guideline8"
-                                                android:orientation="horizontal"
-                                                app:layout_constraintGuide_percent="0.86"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dziękujemy za wzięcie udziału w badaniu!"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/main_content_message__TV" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.86" />
+
     <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:id="@+id/cardView" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/cardView1"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/guideline8"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginStart="16dp" app:cardElevation="0dp">
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cardView1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline8">
+
         <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" android:background="@drawable/rounded_corner"
-        >
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_corner"
+                android:orientation="vertical">
+
             <ImageView
+                    android:id="@+id/reply_2_ic"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_reply"
-                    android:id="@+id/reply_2_ic" android:layout_marginTop="5dp"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/ic_reply" />
+
             <TextView
-                    android:text="Odpowiedz"
+                    android:id="@+id/reply_TV"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/reply_TV" android:gravity="center"/>
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/reply" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
     <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:id="@+id/cardView1" app:layout_constraintStart_toEndOf="@+id/cardView"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/cardView15"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/guideline8"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:cardElevation="0dp">
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cardView15"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="@+id/guideline8">
+
         <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" android:background="@drawable/rounded_corner"
-        >
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_corner"
+                android:orientation="vertical">
+
             <ImageView
+                    android:id="@+id/reply_everyone_ic"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_reply_all"
-                    android:id="@+id/reply_everyone_ic" android:layout_marginTop="5dp"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/ic_reply_all" />
+
             <TextView
-                    android:text="Odpowiedz wszystkim"
+                    android:id="@+id/reply_everyone_TV"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/reply_everyone_TV" android:gravity="center"
-                    android:textSize="14sp"/>
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/reply_all"
+                    android:textSize="14sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
     <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
             android:id="@+id/cardView15"
-            app:layout_constraintStart_toEndOf="@+id/cardView1" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="@+id/guideline8" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="16dp" app:cardElevation="0dp">
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cardView1"
+            app:layout_constraintTop_toTopOf="@+id/guideline8">
+
         <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" android:background="@drawable/rounded_corner">
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_corner"
+                android:orientation="vertical">
+
             <ImageView
+                    android:id="@+id/forward_ic"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_forward"
-                    android:id="@+id/forward_ic" android:layout_marginTop="5dp"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/ic_forward" />
+
             <TextView
-                    android:text="Przekaż dalej"
+                    android:id="@+id/forward_TV"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/forward_TV" android:gravity="center"/>
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/forward" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.82" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.58" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

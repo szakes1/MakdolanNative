@@ -8,11 +8,24 @@ class Makdolan {
     fun calculateDate(): String {
         val dt = DateTime()
 
-        val day = (dt.dayOfMonth - 1).toString().padStart(2, '0')
-        val month = dt.monthOfYear.toString().padStart(2, '0')
+        val day = dt.dayOfMonth
+        val month = dt.monthOfYear
         val year = dt.year
 
-        return "$day/$month/$year"
+        var calculatedDay: String
+        var calculatedMonth: String
+        var calculatedYear: String
+
+        if (day > 1) {
+            calculatedDay = (day - 1).toString().padStart(2, '0')
+        }
+        else {
+            calculatedDay = day.toString().padStart(2, '0')
+        }
+        calculatedMonth = month.toString().padStart(2, '0')
+        calculatedYear = year.toString()
+
+        return "$calculatedDay/$calculatedMonth/$calculatedYear"
     }
 
     fun calculateUniqueCode(): String {

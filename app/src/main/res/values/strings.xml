@@ -9,9 +9,10 @@
     <string name="important_information_content">Nie zaleca się korzystanie z tej aplikacji w jakiejkolwiek restauracji.
         Aplikacja jest tylko do celów edukacyjnych i pokazowych.
     </string>
+    <string name="credits">Icon made by Smashicons from www.flaticon.com</string>
 
     <string name="click_coupon">Wybierz kupon:</string>
-    <string name="image_content_description">Kupon</string>
+    <string name="coupon_image">Kupon</string>
     <string name="classic_coupom">Klasyczny kupon</string>
     <string name="email_coupom">Kupon z maila</string>
 
@@ -21,23 +22,52 @@
     <string name="generated_code_rules">Kupon ten upoważnia do jednokrotnego odbioru produktu gratis przy kolejnym
         dowolnym zakupie z oferty klasycznej.
         Kupon ważny jest przez 7 dni od czasu jego wygenerowania i może być zrealizowany w dowolnej restauracji
-        McDonald\'s w Polsce z wyłączeniem restauracji znajdujących się na terenie Portu Lotniczego im. Fryderyka
+        Makdolan\'s w Polsce z wyłączeniem restauracji znajdujących się na terenie Portu Lotniczego im. Fryderyka
         Chopina w Warszawie oraz Portu Lotniczego im. Lecha Wałęsy w Gdańsku. Szczegółowy regulamin ankiety „Opinia
         Gości\"
         znajduje się na stronie
         <font color="#FFC300">
-            <u>www.mcdonalds.pl</u>
+            <u>www.makdolan.pl</u>
         </font>
         w sekcji
         <font color="#FFC300">
             <u>Regulaminy</u>
         </font>
     </string>
+
     <string name="print_or_save_to_pdf">DRUKUJ /\nZAPISZ JAKO PDF</string>
     <string name="send_coupon">PRZEŚLIJ KUPON</string>
     <string name="delivery_within_twentyfour_hours">(WYSYŁKA W CIĄGU 24 GODZIN)</string>
-    <string name="hamburger_shortcut">Hamburger</string>
-    <string name="cheeseburger_shortcut">Cheeseburger</string>
-    <string name="icecream_shortcut">Lody</string>
-    <string name="fries_shortcut">Frytki</string>
+
+    <string name="hamburger_short_label_shortcut">Hamburger</string>
+    <string name="cheeseburger_short_label_shortcut">Cheeseburger</string>
+    <string name="icecream_short_label_shortcut">Lody</string>
+    <string name="fries_short_label_shortcut">Frytki</string>
+
+    <string name="hamburger_long_label_shortcut">Wygeneruj kod dla hamburgera.</string>
+    <string name="icecream_long_label_shortcut">Wygeneruj kod dla lodów.</string>
+    <string name="cheeseburger_long_label_shortcut">Wygeneruj kod dla cheeseburgera.</string>
+    <string name="fries_label_shortcut">Wygeneruj kod dla frytek.</string>
+
+    <string name="go_back_icon">Go back icon</string>
+    <string name="more_vert_icon">More vert icon</string>
+    <string name="email_icon">Email icon</string>
+    <string name="delete_icon">Delete icon</string>
+    <string name="archive_icon">Archive icon</string>
+    <string name="star_icon">Star icon</string>
+    <string name="expand_icon">Expand icon</string>
+    <string name="reply_icon">Reply icon</string>
+
+    <string name="profile_pic">M</string>
+
+    <string name="begin_message">Dzień dobry,</string>
+    <string name="begin_message2">Przesyłamy kupon w podziękowaniu za wzięcie udziału w ankiecie.</string>
+    <string name="voucher">Voucher</string>
+    <string name="inbox">Odebrane</string>
+    <string name="makdolan_poland">Makdolan Poland</string>
+    <string name="yesterday">Wczoraj</string>
+    <string name="to_myself">do mnie</string>
+    <string name="reply">Odpowiedz</string>
+    <string name="reply_all">Odpowiedz wszystkim</string>
+    <string name="forward">Przekaż dalej</string>
 </resources>
