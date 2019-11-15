@@ -8,7 +8,7 @@ Jest to natywna wersja Makdolan (poprzednio: "Makdolan Mobile") napisana w Kotli
 
 Pobierz już dziś: https://github.com/szakes1/MakdolanNative/releases
 
-![Screenshot_1]( https://i.imgur.com/9yBsapE.png )
+![Screenshot_1](https://i.imgur.com/Qbo7azD.png)
 
 ![Screenshot_2](https://i.imgur.com/Z5loMsI.png )
 
