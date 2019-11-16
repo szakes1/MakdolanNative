@@ -19,15 +19,6 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val viewOfLayout = inflater.inflate(R.layout.fragment_home, container, false)
-
-        val donateImg = viewOfLayout.donate_IMGV
-
-        donateImg.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.paypal.me/KarolZientek"))
-            startActivity(intent)
-        }
-
-        return viewOfLayout
+        return inflater.inflate(R.layout.fragment_home, container, false)
     }
 }
