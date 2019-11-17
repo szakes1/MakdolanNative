@@ -39,15 +39,13 @@
     <string name="send_coupon">PRZEŚLIJ KUPON</string>
     <string name="delivery_within_twentyfour_hours">(WYSYŁKA W CIĄGU 24 GODZIN)</string>
 
-    <string name="hamburger_short_label_shortcut">Hamburger</string>
-    <string name="cheeseburger_short_label_shortcut">Cheeseburger</string>
-    <string name="icecream_short_label_shortcut">Lody</string>
-    <string name="fries_short_label_shortcut">Frytki</string>
+    <string name="hamburger_classic_short_label_shortcut">Hamburger - klasyczny</string>
+    <string name="icecream_classic_short_label_shortcut">Lody - klasyczny</string>
+    <string name="hamburger_mail_short_label_shortcut">Hamburger - mail</string>
+    <string name="icecream_mail_short_label_shortcut">Lody - mail</string>
 
     <string name="hamburger_long_label_shortcut">Wygeneruj kod dla hamburgera.</string>
     <string name="icecream_long_label_shortcut">Wygeneruj kod dla lodów.</string>
-    <string name="cheeseburger_long_label_shortcut">Wygeneruj kod dla cheeseburgera.</string>
-    <string name="fries_label_shortcut">Wygeneruj kod dla frytek.</string>
 
     <string name="go_back_icon">Go back icon</string>
     <string name="more_vert_icon">More vert icon</string>
