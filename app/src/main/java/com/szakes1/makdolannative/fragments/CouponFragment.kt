@@ -11,7 +11,6 @@ import androidx.core.content.ContextCompat
 import com.szakes1.makdolannative.R
 import com.szakes1.makdolannative.activities.GeneratedCouponActivity
 import com.szakes1.makdolannative.activities.GeneratedCouponEmailActivity
-import com.szakes1.makdolannative.activities.MainActivity
 import kotlinx.android.synthetic.main.fragment_coupon.view.*
 
 

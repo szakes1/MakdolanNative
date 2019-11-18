@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".activities.MainActivity" android:orientation="vertical">
+        tools:context=".activities.HomeActivity" android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -13,7 +13,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorSecondaryDark"
             android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
+            android:theme="@style/ToolbarTheme"
             app:title="Makdolan Native"
             app:titleTextColor="@android:color/white" />
 
@@ -22,6 +22,7 @@
             android:layout_height="match_parent" android:id="@+id/tabLayout"
             android:background="@color/colorSecondaryDark"
             app:tabTextColor="@android:color/white" app:tabIndicatorColor="@android:color/white"
+            android:theme="@style/TablayoutTheme"
             app:tabMode="scrollable"/>
     <androidx.viewpager.widget.ViewPager
             android:layout_width="match_parent"

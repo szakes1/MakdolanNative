@@ -7,9 +7,10 @@
         tools:context=".fragments.HomeFragment">
 
     <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/app_icon_IMGV"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:contentDescription="@string/app_icon"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -31,10 +32,11 @@
             app:layout_constraintGuide_percent="0.13" />
 
     <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/app_name_TV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
+            android:fontFamily="@font/lato"
             android:text="@string/app_name"
             android:textColor="@android:color/white"
             android:textSize="30sp"
@@ -50,11 +52,12 @@
             app:layout_constraintGuide_percent="0.21" />
 
     <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/how_to_use_TV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
+            android:fontFamily="@font/lato"
             android:text="@string/how_to_use"
             android:textColor="@android:color/white"
             android:textSize="24sp"
@@ -76,11 +79,12 @@
             app:layout_constraintGuide_percent="0.53" />
 
     <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/how_to_use_content_TV"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="8dp"
+            android:fontFamily="@font/lato"
             android:text="@string/instructions"
             android:textColor="@android:color/white"
             app:autoSizeTextType="uniform"
@@ -90,9 +94,10 @@
             app:layout_constraintTop_toTopOf="@+id/guideline5" />
 
     <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/app_icon_IMGV2"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:contentDescription="@string/app_icon"
             app:layout_constraintBottom_toTopOf="@+id/guideline19"
             app:layout_constraintEnd_toStartOf="@+id/guideline17"
             app:layout_constraintHorizontal_bias="0.0"
@@ -109,15 +114,16 @@
             app:layout_constraintGuide_percent="0.9" />
 
     <TextView
-            android:id="@+id/textView"
+            android:id="@+id/credits_TV"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:fontFamily="@font/lato"
             android:text="@string/credits"
             android:textColor="@android:color/white"
             android:textSize="12sp"
             app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toTopOf="@+id/guideline19"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
             app:layout_constraintStart_toStartOf="@+id/guideline17"
             app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
@@ -141,5 +147,12 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.94" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
