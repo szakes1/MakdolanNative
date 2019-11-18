@@ -4,11 +4,9 @@ import android.content.Intent
 import android.content.pm.ShortcutInfo
 import android.content.pm.ShortcutManager
 import android.graphics.drawable.Icon
-import android.net.Uri
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.core.content.ContextCompat
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
@@ -17,7 +15,7 @@ import com.szakes1.makdolannative.R
 import com.szakes1.makdolannative.adapters.ViewPagerAdapter
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
 
     private lateinit var tabLayout: TabLayout
     private lateinit var viewPager: ViewPager
@@ -25,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_home)
 
         // Creates dynamic shortcuts
         if (Build.VERSION.SDK_INT >= 25) {
@@ -48,14 +46,14 @@ class MainActivity : AppCompatActivity() {
                 .setShortLabel(resources.getString(R.string.hamburger_mail_short_label_shortcut))
                 .setLongLabel(resources.getString(R.string.hamburger_long_label_shortcut))
                 .setIcon(Icon.createWithResource(applicationContext, R.drawable.ic_hamburger))
-                .setIntent(Intent(applicationContext, GeneratedCouponActivity::class.java).setAction(Intent.ACTION_VIEW).putExtra("coupon_image", R.drawable.coupon_cheeseburger))
+                .setIntent(Intent(applicationContext, GeneratedCouponEmailActivity::class.java).setAction(Intent.ACTION_VIEW).putExtra("coupon_image", R.drawable.coupon_hamburger))
                 .build()
 
             val friesShortcut = ShortcutInfo.Builder(applicationContext, "fries")
                 .setShortLabel(resources.getString(R.string.icecream_mail_short_label_shortcut))
                 .setLongLabel(resources.getString(R.string.icecream_long_label_shortcut))
                 .setIcon(Icon.createWithResource(applicationContext, R.drawable.ic_ice_cream))
-                .setIntent(Intent(applicationContext, GeneratedCouponActivity::class.java).setAction(Intent.ACTION_VIEW).putExtra("coupon_image", R.drawable.coupon_fries))
+                .setIntent(Intent(applicationContext, GeneratedCouponEmailActivity::class.java).setAction(Intent.ACTION_VIEW).putExtra("coupon_image", R.drawable.coupon_icecream))
                 .build()
 
             shortcutManager!!.dynamicShortcuts = Arrays.asList(hamburgerShortcut, icecreamShortcut, cheeseburgerShortcut, friesShortcut)
