@@ -22,5 +22,9 @@ class GeneratedCouponEmailActivity : AppCompatActivity() {
 
         val couponImage = intent.getIntExtra("coupon_image", 0)
         generated_coupon_IMGV.setImageDrawable(ContextCompat.getDrawable(applicationContext, couponImage))
+
+        go_back_ic.setOnClickListener {
+            finish()
+        }
     }
 }
