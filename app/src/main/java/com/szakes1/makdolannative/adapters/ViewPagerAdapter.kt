@@ -8,7 +8,7 @@ import com.szakes1.makdolannative.fragments.CouponFragment
 import com.szakes1.makdolannative.fragments.HomeFragment
 import java.lang.IllegalStateException
 
-class ViewPagerAdapter(fm: FragmentManager, private val numberOfFrags: Int) : FragmentStatePagerAdapter(fm) {
+class ViewPagerAdapter(fm: FragmentManager, private val numberOfFrags: Int) : FragmentStatePagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
     override fun getItem(position: Int): Fragment {
         when (position) {
             0 -> return HomeFragment()
